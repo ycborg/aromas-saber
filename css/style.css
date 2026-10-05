@@ -1,0 +1,824 @@
+/* ==========================================================================
+   Instituto Aromas & Saber — Folha de estilos personalizada
+   Complementa o Bootstrap 5 com a identidade visual da instituição.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Variáveis (paleta e tipografia)
+   -------------------------------------------------------------------------- */
+:root {
+  --as-vinho: #6b1e2e;
+  --as-vinho-escuro: #4a1420;
+  --as-oliva: #5b6b3a;
+  --as-oliva-claro: #e6e9da;
+  --as-dourado: #b8975a;
+  --as-dourado-claro: #d9c29a;
+  --as-creme: #f7f1e8;
+  --as-areia: #efe5d6;
+  --as-cafe: #2b1d16;
+  --as-texto: #3d2f27;
+
+  --as-fonte-titulo: "Cormorant Garamond", Georgia, serif;
+  --as-fonte-texto: "Mulish", "Segoe UI", sans-serif;
+
+  /* Sobrescreve variáveis do Bootstrap para manter a consistência */
+  --bs-body-font-family: var(--as-fonte-texto);
+  --bs-body-color: var(--as-texto);
+  --bs-body-bg: var(--as-creme);
+  --bs-link-color: var(--as-vinho);
+  --bs-link-color-rgb: 107, 30, 46;
+  --bs-link-hover-color: var(--as-vinho-escuro);
+}
+
+/* --------------------------------------------------------------------------
+   2. Base
+   -------------------------------------------------------------------------- */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* compensa a navbar fixa ao navegar por âncoras */
+}
+
+body {
+  background-color: var(--as-creme);
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5,
+.display-title {
+  font-family: var(--as-fonte-titulo);
+  font-weight: 600;
+  color: var(--as-cafe);
+  line-height: 1.15;
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+.section-alt {
+  background-color: var(--as-areia);
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--as-oliva);
+  margin-bottom: 0.75rem;
+}
+
+.section-title {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  margin-bottom: 1rem;
+}
+
+.section-lead {
+  max-width: 40rem;
+  color: #6a5a4f;
+}
+
+/* Filete dourado decorativo abaixo dos títulos */
+.divider {
+  width: 64px;
+  height: 2px;
+  background-color: var(--as-dourado);
+  border: 0;
+  opacity: 1;
+  margin: 1.25rem 0 1.5rem;
+}
+
+.text-center .divider,
+.divider.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* --------------------------------------------------------------------------
+   3. Botões
+   -------------------------------------------------------------------------- */
+.btn {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border-radius: 2px;
+  padding: 0.7rem 1.6rem;
+}
+
+.btn-sm {
+  padding: 0.45rem 1rem;
+}
+
+.btn-vinho {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--as-vinho);
+  --bs-btn-border-color: var(--as-vinho);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--as-vinho-escuro);
+  --bs-btn-hover-border-color: var(--as-vinho-escuro);
+  --bs-btn-active-bg: var(--as-vinho-escuro);
+  --bs-btn-active-border-color: var(--as-vinho-escuro);
+  --bs-btn-focus-shadow-rgb: 107, 30, 46;
+}
+
+.btn-outline-vinho {
+  --bs-btn-color: var(--as-vinho);
+  --bs-btn-border-color: var(--as-vinho);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--as-vinho);
+  --bs-btn-hover-border-color: var(--as-vinho);
+  --bs-btn-active-bg: var(--as-vinho-escuro);
+  --bs-btn-active-color: #fff;
+  --bs-btn-focus-shadow-rgb: 107, 30, 46;
+}
+
+.btn-dourado {
+  --bs-btn-color: var(--as-cafe);
+  --bs-btn-bg: var(--as-dourado);
+  --bs-btn-border-color: var(--as-dourado);
+  --bs-btn-hover-color: var(--as-cafe);
+  --bs-btn-hover-bg: var(--as-dourado-claro);
+  --bs-btn-hover-border-color: var(--as-dourado-claro);
+  --bs-btn-active-bg: var(--as-dourado-claro);
+  --bs-btn-focus-shadow-rgb: 184, 151, 90;
+}
+
+/* --------------------------------------------------------------------------
+   4. Navbar (RF01)
+   -------------------------------------------------------------------------- */
+.navbar-as {
+  background-color: var(--as-cafe);
+  border-bottom: 1px solid rgba(184, 151, 90, 0.35);
+}
+
+.navbar-as .navbar-brand {
+  font-family: var(--as-fonte-titulo);
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: var(--as-creme);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.navbar-as .navbar-brand .amp {
+  color: var(--as-dourado);
+  font-style: italic;
+}
+
+.brand-mark {
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+}
+
+.navbar-as .nav-link {
+  color: rgba(247, 241, 232, 0.82);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.5rem 0.9rem;
+}
+
+.navbar-as .nav-link:hover,
+.navbar-as .nav-link:focus,
+.navbar-as .nav-link.active,
+.navbar-as .nav-link.show {
+  color: var(--as-dourado-claro);
+}
+
+.navbar-as .navbar-toggler {
+  border-color: rgba(184, 151, 90, 0.6);
+}
+
+.navbar-as .navbar-toggler:focus {
+  box-shadow: 0 0 0 0.2rem rgba(184, 151, 90, 0.35);
+}
+
+.navbar-as .dropdown-menu {
+  background-color: var(--as-creme);
+  border: 1px solid var(--as-dourado-claro);
+  border-radius: 2px;
+  padding: 0.5rem 0;
+}
+
+.navbar-as .dropdown-item {
+  font-weight: 600;
+  color: var(--as-texto);
+  padding: 0.55rem 1.25rem;
+}
+
+.navbar-as .dropdown-item:hover,
+.navbar-as .dropdown-item:focus {
+  background-color: var(--as-areia);
+  color: var(--as-vinho);
+}
+
+/* --------------------------------------------------------------------------
+   5. Hero (RF02)
+   -------------------------------------------------------------------------- */
+.hero {
+  background:
+    radial-gradient(ellipse at top right, rgba(184, 151, 90, 0.18), transparent 60%),
+    var(--as-creme);
+  padding: 7.5rem 0 5rem; /* espaço extra para a navbar fixa */
+}
+
+.hero h1 {
+  font-size: clamp(2.6rem, 6vw, 4.2rem);
+  font-weight: 600;
+}
+
+.hero h1 em {
+  color: var(--as-vinho);
+}
+
+.hero .lead {
+  font-size: 1.15rem;
+  color: #5e4f45;
+  max-width: 34rem;
+}
+
+.hero-figure {
+  position: relative;
+}
+
+.hero-figure img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+/* Moldura dourada deslocada atrás da imagem */
+.hero-figure::before {
+  content: "";
+  position: absolute;
+  inset: 1.25rem -1.25rem -1.25rem 1.25rem;
+  border: 1px solid var(--as-dourado);
+  z-index: -1;
+}
+
+.hero-badge {
+  position: absolute;
+  left: -1rem;
+  bottom: 2rem;
+  background-color: var(--as-vinho);
+  color: var(--as-creme);
+  padding: 1rem 1.25rem;
+  max-width: 13rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.hero-badge strong {
+  display: block;
+  font-family: var(--as-fonte-titulo);
+  font-size: 1.9rem;
+  color: var(--as-dourado-claro);
+}
+
+/* --------------------------------------------------------------------------
+   6. Cards de cursos (RF03)
+   -------------------------------------------------------------------------- */
+.course-card {
+  border: 1px solid #e3d7c5;
+  border-radius: 2px;
+  background-color: #fffdf9;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 1rem 2rem rgba(43, 29, 22, 0.1);
+}
+
+.course-card .card-img-top {
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.course-card .card-title {
+  font-size: 1.5rem;
+}
+
+.course-card .card-text {
+  color: #6a5a4f;
+  font-size: 0.95rem;
+}
+
+.course-meta {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--as-oliva);
+}
+
+.badge-area {
+  background-color: var(--as-oliva-claro);
+  color: var(--as-oliva);
+  font-weight: 700;
+  border-radius: 2px;
+}
+
+/* --------------------------------------------------------------------------
+   7. Indicadores (RF04)
+   -------------------------------------------------------------------------- */
+.indicators {
+  background-color: var(--as-vinho);
+  color: var(--as-creme);
+  padding: 4.5rem 0;
+}
+
+.indicators .section-title,
+.indicators h2 {
+  color: var(--as-creme);
+}
+
+.indicator {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  height: 100%;
+  border: 1px solid rgba(217, 194, 154, 0.35);
+}
+
+.indicator-icon {
+  font-size: 1.8rem;
+  color: var(--as-dourado-claro);
+}
+
+.indicator-value {
+  font-family: var(--as-fonte-titulo);
+  font-size: clamp(2.6rem, 5vw, 3.4rem);
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  margin: 0.5rem 0;
+}
+
+.indicator-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--as-dourado-claro);
+}
+
+/* --------------------------------------------------------------------------
+   8. Tabela de cursos (RF05)
+   -------------------------------------------------------------------------- */
+.table-as {
+  --bs-table-bg: #fffdf9;
+  --bs-table-striped-bg: #f8f1e6;
+  --bs-table-hover-bg: #f1e6d4;
+  --bs-table-border-color: #e3d7c5;
+  margin-bottom: 0;
+}
+
+.table-as thead th {
+  background-color: var(--as-cafe);
+  color: var(--as-creme);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  border-color: var(--as-cafe);
+}
+
+.table-as td {
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.table-as td:first-child {
+  white-space: normal;
+  min-width: 16rem;
+  font-weight: 600;
+}
+
+.table-wrapper {
+  border: 1px solid #e3d7c5;
+}
+
+.badge-modalidade {
+  font-weight: 700;
+  border-radius: 2px;
+  padding: 0.4em 0.7em;
+}
+
+.badge-presencial { background-color: #f1dfe2; color: var(--as-vinho); }
+.badge-semipresencial { background-color: #f3ead9; color: #7a5e2b; }
+.badge-hibrido { background-color: var(--as-oliva-claro); color: var(--as-oliva); }
+.badge-ead { background-color: #e4e1dd; color: var(--as-cafe); }
+
+/* --------------------------------------------------------------------------
+   9. Contato (RF06)
+   -------------------------------------------------------------------------- */
+.contact-info li {
+  display: flex;
+  gap: 0.9rem;
+  margin-bottom: 1.1rem;
+}
+
+.contact-info i {
+  color: var(--as-vinho);
+  font-size: 1.2rem;
+}
+
+.form-card {
+  background-color: #fffdf9;
+  border: 1px solid #e3d7c5;
+  padding: 2rem;
+}
+
+.form-label {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--as-cafe);
+}
+
+.form-control,
+.form-select {
+  border-radius: 2px;
+  border-color: #d8c9b3;
+  background-color: #fff;
+  padding: 0.7rem 0.9rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--as-dourado);
+  box-shadow: 0 0 0 0.2rem rgba(184, 151, 90, 0.25);
+}
+
+/* --------------------------------------------------------------------------
+   10. Modais de detalhes (RF07)
+   -------------------------------------------------------------------------- */
+.modal-content {
+  border-radius: 2px;
+  border: 0;
+  background-color: var(--as-creme);
+}
+
+.modal-header {
+  background-color: var(--as-cafe);
+  border-bottom: 2px solid var(--as-dourado);
+}
+
+.modal-header .modal-title {
+  color: var(--as-creme);
+  font-size: 1.7rem;
+}
+
+.modal-header .btn-close {
+  filter: invert(1) grayscale(1) brightness(2);
+}
+
+.modal-body h3 {
+  font-family: var(--as-fonte-texto);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--as-oliva);
+  margin-bottom: 0.4rem;
+}
+
+.modal-facts {
+  background-color: var(--as-areia);
+  padding: 1rem 1.25rem;
+}
+
+.modal-facts dt {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #7c6a5d;
+}
+
+.modal-facts dd {
+  font-weight: 700;
+  color: var(--as-cafe);
+  margin-bottom: 0;
+}
+
+/* --------------------------------------------------------------------------
+   11. Página Áreas de Ensino
+   -------------------------------------------------------------------------- */
+.page-header {
+  background-color: var(--as-cafe);
+  color: var(--as-creme);
+  padding: 8rem 0 4rem;
+}
+
+.page-header h1 {
+  color: var(--as-creme);
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+}
+
+.page-header .breadcrumb-item,
+.page-header .breadcrumb-item a,
+.page-header .breadcrumb-item + .breadcrumb-item::before {
+  color: var(--as-dourado-claro);
+}
+
+.page-header .breadcrumb-item.active {
+  color: rgba(247, 241, 232, 0.7);
+}
+
+.area-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.area-list li {
+  padding: 0.35rem 0;
+  border-bottom: 1px dashed #d8c9b3;
+}
+
+.area-list li:last-child {
+  border-bottom: 0;
+}
+
+/* --------------------------------------------------------------------------
+   12. Rodapé (RF08)
+   -------------------------------------------------------------------------- */
+.footer-as {
+  background-color: var(--as-cafe);
+  color: rgba(247, 241, 232, 0.75);
+  padding: 4rem 0 0;
+  font-size: 0.95rem;
+}
+
+.footer-as h2 {
+  font-family: var(--as-fonte-texto);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--as-dourado-claro);
+  margin-bottom: 1.1rem;
+}
+
+.footer-as .footer-brand {
+  font-family: var(--as-fonte-titulo);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--as-creme);
+}
+
+.footer-as a {
+  color: rgba(247, 241, 232, 0.85);
+  text-decoration: none;
+}
+
+.footer-as a:hover,
+.footer-as a:focus {
+  color: var(--as-dourado-claro);
+}
+
+.footer-as address i,
+.footer-as .footer-contact i {
+  color: var(--as-dourado);
+  margin-right: 0.5rem;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(217, 194, 154, 0.45);
+  font-size: 1.1rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.footer-as .social-link:hover,
+.footer-as .social-link:focus {
+  background-color: var(--as-dourado);
+  color: var(--as-cafe);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(217, 194, 154, 0.2);
+  margin-top: 3rem;
+  padding: 1.25rem 0;
+  font-size: 0.85rem;
+}
+
+/* --------------------------------------------------------------------------
+   13. Ajustes responsivos (RNF01)
+   -------------------------------------------------------------------------- */
+
+/* Smartphones e tablets: menu colapsado ocupa a largura e ganha separação */
+@media (max-width: 991.98px) {
+  .navbar-as .navbar-collapse {
+    border-top: 1px solid rgba(184, 151, 90, 0.25);
+    margin-top: 0.75rem;
+    padding: 0.5rem 0 1rem;
+  }
+
+  .navbar-as .dropdown-menu {
+    background-color: transparent;
+    border: 0;
+    padding: 0 0 0 1rem;
+  }
+
+  .navbar-as .dropdown-item {
+    color: rgba(247, 241, 232, 0.75);
+    padding: 0.4rem 0.9rem;
+  }
+
+  .navbar-as .dropdown-item:hover,
+  .navbar-as .dropdown-item:focus {
+    background-color: transparent;
+    color: var(--as-dourado-claro);
+  }
+
+  .hero {
+    padding-top: 6.5rem;
+  }
+}
+
+/* Smartphones */
+@media (max-width: 575.98px) {
+  .section {
+    padding: 3.5rem 0;
+  }
+
+  .hero-figure img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .hero-figure::before {
+    inset: 0.75rem -0.75rem -0.75rem 0.75rem;
+  }
+
+  .hero-badge {
+    left: 0.75rem;
+    bottom: 0.75rem;
+  }
+
+  .form-card {
+    padding: 1.25rem;
+  }
+}
+
+/* Respeita usuários que preferem menos movimento */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .course-card { transition: none; }
+  .course-card:hover { transform: none; }
+}
+
+/* Detalhe do "&" no nome do rodapé */
+.footer-as .footer-brand .amp {
+  color: var(--as-dourado);
+  font-style: italic;
+}
+
+/* Crédito de desenvolvimento no rodapé */
+.dev-credit {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 800;
+  font-style: italic;
+  color: var(--as-dourado-claro);
+}
+
+/* A tabela rola apenas na horizontal */
+.table-wrapper {
+  overflow-y: hidden;
+}
+
+/* --------------------------------------------------------------------------
+   14. Barra de rolagem personalizada
+   -------------------------------------------------------------------------- */
+html {
+  scrollbar-color: var(--as-vinho) var(--as-areia); /* Firefox e Chrome 121+ */
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--as-areia);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--as-vinho);
+  border: 3px solid var(--as-areia);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--as-dourado);
+}
+
+/* --------------------------------------------------------------------------
+   15. Carrossel de notícias
+   -------------------------------------------------------------------------- */
+.news-slide {
+  background-color: #fffdf9;
+  border: 1px solid #e3d7c5;
+}
+
+.news-img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.news-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2.5rem;
+  color: #5e4f45;
+}
+
+.news-title {
+  font-size: clamp(1.7rem, 3vw, 2.3rem);
+  margin-bottom: 1rem;
+}
+
+/* Barra com setas e indicadores logo abaixo do slide */
+.news-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.news-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--as-vinho);
+  background-color: transparent;
+  color: var(--as-vinho);
+  font-size: 1.1rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.news-arrow:hover,
+.news-arrow:focus-visible {
+  background-color: var(--as-vinho);
+  color: #fff;
+}
+
+/* Indicadores em fluxo normal (o padrão do Bootstrap é sobreposto à imagem) */
+.news-indicators {
+  position: static;
+  margin: 0;
+  gap: 0.4rem;
+}
+
+.news-indicators [data-bs-target] {
+  width: 28px;
+  height: 3px;
+  margin: 0;
+  border: 0;
+  background-color: var(--as-vinho);
+  opacity: 0.25;
+}
+
+.news-indicators .active {
+  width: 44px;
+  background-color: var(--as-dourado);
+  opacity: 1;
+}
+
+/* Desktop: a imagem preenche a coluna sem definir a altura do slide,
+   assim todas as notícias têm o mesmo tamanho */
+@media (min-width: 992px) {
+  .news-media {
+    position: relative;
+    min-height: 26rem;
+  }
+
+  .news-img {
+    position: absolute;
+    inset: 0;
+    aspect-ratio: auto;
+  }
+}
+
+/* Mobile/tablet: altura mínima do texto evita "pulos" ao trocar de slide */
+@media (max-width: 991.98px) {
+  .news-body {
+    padding: 1.5rem;
+    min-height: 19rem;
+    justify-content: flex-start;
+  }
+}

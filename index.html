@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Instituto Aromas & Saber — escola de gastronomia, panificação artesanal, confeitaria, enologia e gestão de negócios gastronômicos.">
+  <title>Instituto Aromas &amp; Saber | Academia de Gastronomia</title>
+
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=JetBrains+Mono:ital,wght@1,800&family=Mulish:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 e ícones -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Estilos personalizados -->
+  <link href="css/style.css?v=5" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===================================================================
+       RF01 – Barra de navegação
+       =================================================================== -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-as fixed-top" aria-label="Navegação principal">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo.svg" alt="" class="brand-mark">
+          <span>Aromas <span class="amp">&amp;</span> Saber</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cursos">Cursos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Áreas de Ensino
+              </a>
+              <ul class="dropdown-menu dropdown-menu-lg-end">
+                <li><a class="dropdown-item" href="areas.html#cozinha-internacional">Cozinha Internacional</a></li>
+                <li><a class="dropdown-item" href="areas.html#panificacao-confeitaria">Panificação &amp; Confeitaria</a></li>
+                <li><a class="dropdown-item" href="areas.html#enologia-bebidas">Enologia &amp; Bebidas</a></li>
+                <li><a class="dropdown-item" href="areas.html#gestao-restaurantes">Gestão de Restaurantes</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="areas.html">Ver todas as áreas</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#noticias">Notícias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contato">Contato</a>
+            </li>
+            <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+              <a class="btn btn-dourado btn-sm" href="#contato">Matricule-se</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- =================================================================
+         RF02 – Seção principal (Hero)
+         ================================================================= -->
+    <section class="hero" id="inicio">
+      <div class="container">
+        <div class="row align-items-center gx-4 gx-xl-5 gy-5">
+          <div class="col-lg-6">
+            <span class="eyebrow">Academia de Gastronomia &amp; Alta Confeitaria</span>
+            <h1>Onde a técnica encontra o <em>afeto</em> da boa mesa.</h1>
+            <hr class="divider">
+            <p class="lead mb-4">
+              Há mais de 8 anos, o Instituto Aromas &amp; Saber forma chefs, padeiros, confeiteiros
+              e sommeliers com aulas práticas em cozinhas profissionais, turmas reduzidas e
+              professores que vivem o dia a dia dos melhores restaurantes do país.
+            </p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="#cursos" class="btn btn-vinho btn-lg">Conheça os cursos</a>
+              <a href="#contato" class="btn btn-outline-vinho btn-lg">Fale conosco</a>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="hero-figure mx-auto" style="max-width: 460px;">
+              <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=900&q=80"
+                   alt="Chef finalizando a montagem de um prato em cozinha profissional">
+              <div class="hero-badge">
+                <strong>1.300+</strong>
+                profissionais formados no mercado gastronômico
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         RF03 – Catálogo de cursos (cards)
+         ================================================================= -->
+    <section class="section" id="cursos">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="eyebrow">Catálogo</span>
+          <h2 class="section-title">Nossos cursos</h2>
+          <hr class="divider">
+          <p class="section-lead mx-auto">
+            Formações práticas para quem quer iniciar, se especializar ou empreender na gastronomia.
+          </p>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+          <!-- Curso 1 -->
+          <div class="col">
+            <article class="card course-card h-100">
+              <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=700&q=80"
+                   class="card-img-top" alt="Pães rústicos de fermentação natural sobre a bancada" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <span class="badge badge-area align-self-start mb-2">Panificação &amp; Confeitaria</span>
+                <h3 class="card-title">Panificação Artesanal e Fermentação Natural</h3>
+                <p class="card-text">Do levain ao forno: domine hidratação, modelagem e fermentação longa para pães de casca crocante.</p>
+                <p class="course-meta mb-3">Presencial · 60h</p>
+                <button type="button" class="btn btn-outline-vinho btn-sm mt-auto align-self-start"
+                        data-bs-toggle="modal" data-bs-target="#modalPanificacao">Ver detalhes</button>
+              </div>
+            </article>
+          </div>
+
+          <!-- Curso 2 -->
+          <div class="col">
+            <article class="card course-card h-100">
+              <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=700&q=80"
+                   class="card-img-top" alt="Prato de alta gastronomia empratado com precisão" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <span class="badge badge-area align-self-start mb-2">Cozinha Internacional</span>
+                <h3 class="card-title">Técnicas Clássicas de Alta Gastronomia</h3>
+                <p class="card-text">Fundos, molhos-mãe, cortes e cocções da escola francesa aplicados à cozinha contemporânea.</p>
+                <p class="course-meta mb-3">Semipresencial · 120h</p>
+                <button type="button" class="btn btn-outline-vinho btn-sm mt-auto align-self-start"
+                        data-bs-toggle="modal" data-bs-target="#modalAltaGastronomia">Ver detalhes</button>
+              </div>
+            </article>
+          </div>
+
+          <!-- Curso 3 -->
+          <div class="col">
+            <article class="card course-card h-100">
+              <img src="https://images.unsplash.com/photo-1569864358642-9d1684040f43?auto=format&fit=crop&w=700&q=80"
+                   class="card-img-top" alt="Macarons coloridos de confeitaria francesa" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <span class="badge badge-area align-self-start mb-2">Panificação &amp; Confeitaria</span>
+                <h3 class="card-title">Confeitaria Francesa Contemporânea</h3>
+                <p class="card-text">Massas folhadas, cremes, entremets e macarons com acabamento de vitrine de pâtisserie.</p>
+                <p class="course-meta mb-3">Presencial · 80h</p>
+                <button type="button" class="btn btn-outline-vinho btn-sm mt-auto align-self-start"
+                        data-bs-toggle="modal" data-bs-target="#modalConfeitaria">Ver detalhes</button>
+              </div>
+            </article>
+          </div>
+
+          <!-- Curso 4 -->
+          <div class="col">
+            <article class="card course-card h-100">
+              <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=700&q=80"
+                   class="card-img-top" alt="Taças de vinho tinto em degustação" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <span class="badge badge-area align-self-start mb-2">Enologia &amp; Bebidas</span>
+                <h3 class="card-title">Sommelier e Harmonização de Vinhos</h3>
+                <p class="card-text">Análise sensorial, principais regiões produtoras e a arte de harmonizar vinhos e pratos.</p>
+                <p class="course-meta mb-3">Híbrido · 45h</p>
+                <button type="button" class="btn btn-outline-vinho btn-sm mt-auto align-self-start"
+                        data-bs-toggle="modal" data-bs-target="#modalSommelier">Ver detalhes</button>
+              </div>
+            </article>
+          </div>
+
+          <!-- Curso 5 -->
+          <div class="col">
+            <article class="card course-card h-100">
+              <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=700&q=80"
+                   class="card-img-top" alt="Salão de restaurante preparado para o serviço" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <span class="badge badge-area align-self-start mb-2">Gestão de Restaurantes</span>
+                <h3 class="card-title">Gestão de Custos e Fichas Técnicas para Restaurantes</h3>
+                <p class="card-text">CMV, precificação, controle de estoque e fichas técnicas para um cardápio lucrativo.</p>
+                <p class="course-meta mb-3">EAD · 30h</p>
+                <button type="button" class="btn btn-outline-vinho btn-sm mt-auto align-self-start"
+                        data-bs-toggle="modal" data-bs-target="#modalGestao">Ver detalhes</button>
+              </div>
+            </article>
+          </div>
+
+          <!-- Curso 6 -->
+          <div class="col">
+            <article class="card course-card h-100">
+              <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=700&q=80"
+                   class="card-img-top" alt="Sobremesa autoral com texturas e apresentação inovadora" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <span class="badge badge-area align-self-start mb-2">Cozinha Internacional</span>
+                <h3 class="card-title">Cozinha Molecular e Inovação Culinária</h3>
+                <p class="card-text">Esferificação, espumas, géis e baixa temperatura: ciência a serviço de pratos surpreendentes.</p>
+                <p class="course-meta mb-3">Presencial · 50h</p>
+                <button type="button" class="btn btn-outline-vinho btn-sm mt-auto align-self-start"
+                        data-bs-toggle="modal" data-bs-target="#modalMolecular">Ver detalhes</button>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         RF04 – Indicadores institucionais (Grid System)
+         ================================================================= -->
+    <section class="indicators" aria-labelledby="titulo-indicadores">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="eyebrow text-white-50">Nossos números</span>
+          <h2 class="section-title" id="titulo-indicadores">Tradição que se mede à mesa</h2>
+          <hr class="divider">
+        </div>
+
+        <div class="row g-4">
+          <div class="col-6 col-lg-3">
+            <div class="indicator">
+              <i class="bi bi-mortarboard indicator-icon" aria-hidden="true"></i>
+              <p class="indicator-value">1.300+</p>
+              <p class="indicator-label mb-0">Alunos formados</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="indicator">
+              <i class="bi bi-journal-bookmark indicator-icon" aria-hidden="true"></i>
+              <p class="indicator-value">6</p>
+              <p class="indicator-label mb-0">Cursos oferecidos</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="indicator">
+              <i class="bi bi-person-badge indicator-icon" aria-hidden="true"></i>
+              <p class="indicator-value">19</p>
+              <p class="indicator-label mb-0">Professores</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="indicator">
+              <i class="bi bi-star indicator-icon" aria-hidden="true"></i>
+              <p class="indicator-value">99,2%</p>
+              <p class="indicator-label mb-0">Satisfação dos alunos</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         RF05 – Consulta de cursos (tabela responsiva)
+         ================================================================= -->
+    <section class="section section-alt" id="consulta">
+      <div class="container">
+        <div class="row justify-content-between align-items-end mb-4 g-3">
+          <div class="col-lg-7">
+            <span class="eyebrow">Consulta</span>
+            <h2 class="section-title">Modalidades, carga horária e investimento</h2>
+            <hr class="divider">
+          </div>
+          <div class="col-lg-4">
+            <p class="mb-0 text-lg-end section-lead">Valores à vista. Consulte condições de parcelamento com nossa equipe.</p>
+          </div>
+        </div>
+
+        <!-- .table-responsive cria rolagem horizontal em telas pequenas -->
+        <div class="table-responsive table-wrapper">
+          <table class="table table-as table-striped table-hover align-middle">
+            <caption class="visually-hidden">Tabela de cursos com modalidade, carga horária e investimento</caption>
+            <thead>
+              <tr>
+                <th scope="col">Curso</th>
+                <th scope="col">Modalidade</th>
+                <th scope="col" class="text-end">Carga horária</th>
+                <th scope="col" class="text-end">Investimento</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Panificação Artesanal e Fermentação Natural</td>
+                <td><span class="badge badge-modalidade badge-presencial">Presencial</span></td>
+                <td class="text-end">60h</td>
+                <td class="text-end">R$ 1.450,00</td>
+              </tr>
+              <tr>
+                <td>Técnicas Clássicas de Alta Gastronomia</td>
+                <td><span class="badge badge-modalidade badge-semipresencial">Semipresencial</span></td>
+                <td class="text-end">120h</td>
+                <td class="text-end">R$ 3.200,00</td>
+              </tr>
+              <tr>
+                <td>Confeitaria Francesa Contemporânea</td>
+                <td><span class="badge badge-modalidade badge-presencial">Presencial</span></td>
+                <td class="text-end">80h</td>
+                <td class="text-end">R$ 2.100,00</td>
+              </tr>
+              <tr>
+                <td>Sommelier e Harmonização de Vinhos</td>
+                <td><span class="badge badge-modalidade badge-hibrido">Híbrido</span></td>
+                <td class="text-end">45h</td>
+                <td class="text-end">R$ 1.800,00</td>
+              </tr>
+              <tr>
+                <td>Gestão de Custos e Fichas Técnicas para Restaurantes</td>
+                <td><span class="badge badge-modalidade badge-ead">EAD</span></td>
+                <td class="text-end">30h</td>
+                <td class="text-end">R$ 890,00</td>
+              </tr>
+              <tr>
+                <td>Cozinha Molecular e Inovação Culinária</td>
+                <td><span class="badge badge-modalidade badge-presencial">Presencial</span></td>
+                <td class="text-end">50h</td>
+                <td class="text-end">R$ 2.600,00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         Notícias (destino do link "Notícias" da navbar)
+         ================================================================= -->
+    <section class="section" id="noticias">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="eyebrow">Acontece no Instituto</span>
+          <h2 class="section-title">Notícias</h2>
+          <hr class="divider">
+        </div>
+
+        <!-- Carrossel do Bootstrap: troca automática, setas e indicadores -->
+        <div id="carouselNoticias" class="carousel slide news-carousel" data-bs-ride="carousel" data-bs-interval="7000">
+          <div class="carousel-inner">
+            <!-- Notícia 1 -->
+            <div class="carousel-item active">
+              <article class="news-slide row g-0">
+                <div class="col-lg-7 news-media">
+                  <img src="img/noticia-avental.webp" class="news-img" alt="Avental marrom com o nome Aromas &amp; Saber bordado em creme e dourado">
+                </div>
+                <div class="col-lg-5 news-body">
+                  <p class="course-meta mb-2"><time datetime="2026-10-01">01 out 2026</time> · Institucional</p>
+                  <h3 class="news-title">Instituto lança uniforme com a nova identidade visual</h3>
+                  <p class="mb-0">As turmas de outubro estreiam o novo avental em sarja de algodão, com o nome da instituição bordado em creme e o “&amp;” em fio dourado.</p>
+                </div>
+              </article>
+            </div>
+            <!-- Notícia 2 -->
+            <div class="carousel-item">
+              <article class="news-slide row g-0">
+                <div class="col-lg-7 news-media">
+                  <img src="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?auto=format&fit=crop&w=1000&q=80" class="news-img" alt="Confeiteira decorando um bolo em degradê de chocolate com saco de confeitar" loading="lazy">
+                </div>
+                <div class="col-lg-5 news-body">
+                  <p class="course-meta mb-2"><time datetime="2026-09-22">22 set 2026</time> · Conquista</p>
+                  <h3 class="news-title">Alunas de confeitaria vencem concurso regional de bolos</h3>
+                  <p class="mb-0">A dupla do curso de Confeitaria Francesa Contemporânea levou o primeiro lugar com um bolo em degradê de três chocolates.</p>
+                </div>
+              </article>
+            </div>
+            <!-- Notícia 3 -->
+            <div class="carousel-item">
+              <article class="news-slide row g-0">
+                <div class="col-lg-7 news-media">
+                  <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1000&q=80" class="news-img" alt="Croissants dourados recém-saídos do forno" loading="lazy">
+                </div>
+                <div class="col-lg-5 news-body">
+                  <p class="course-meta mb-2"><time datetime="2026-09-15">15 set 2026</time> · Evento</p>
+                  <h3 class="news-title">Semana da Viennoiserie reúne chefs convidados</h3>
+                  <p class="mb-0">Aulas abertas de croissant, brioche e pain au chocolat com confeiteiros de Paris e São Paulo, com vagas gratuitas para a comunidade.</p>
+                </div>
+              </article>
+            </div>
+            <!-- Notícia 4 -->
+            <div class="carousel-item">
+              <article class="news-slide row g-0">
+                <div class="col-lg-7 news-media">
+                  <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1000&q=80" class="news-img" alt="Estudantes cozinhando em bancada profissional" loading="lazy">
+                </div>
+                <div class="col-lg-5 news-body">
+                  <p class="course-meta mb-2"><time datetime="2026-08-28">28 ago 2026</time> · Infraestrutura</p>
+                  <h3 class="news-title">Nova cozinha-laboratório é inaugurada</h3>
+                  <p class="mb-0">Espaço com 24 estações individuais, forno combinado e equipamentos de cocção a vácuo, usado pelas turmas de Alta Gastronomia e Cozinha Molecular.</p>
+                </div>
+              </article>
+            </div>
+            <!-- Notícia 5 -->
+            <div class="carousel-item">
+              <article class="news-slide row g-0">
+                <div class="col-lg-7 news-media">
+                  <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=1000&q=80" class="news-img" alt="Convidados reunidos em uma longa mesa de jantar" loading="lazy">
+                </div>
+                <div class="col-lg-5 news-body">
+                  <p class="course-meta mb-2"><time datetime="2026-08-18">18 ago 2026</time> · Comunidade</p>
+                  <h3 class="news-title">Jantar-escola beneficente reúne 120 convidados</h3>
+                  <p class="mb-0">Menu de cinco tempos preparado e servido pelos alunos, com toda a renda revertida para bolsas de estudo do próximo semestre.</p>
+                </div>
+              </article>
+            </div>
+            <!-- Notícia 6 -->
+            <div class="carousel-item">
+              <article class="news-slide row g-0">
+                <div class="col-lg-7 news-media">
+                  <img src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=1000&q=80" class="news-img" alt="Taça de vinho tinto diante de um vinhedo" loading="lazy">
+                </div>
+                <div class="col-lg-5 news-body">
+                  <p class="course-meta mb-2"><time datetime="2026-08-10">10 ago 2026</time> · Viagem técnica</p>
+                  <h3 class="news-title">Alunos de enologia visitam a Serra Gaúcha</h3>
+                  <p class="mb-0">Viagem técnica com degustações guiadas em vinícolas do Vale dos Vinhedos e conversa com enólogos sobre a safra 2026.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Controles abaixo do slide para não cobrir o texto -->
+          <div class="news-controls">
+            <button class="news-arrow" type="button" data-bs-target="#carouselNoticias" data-bs-slide="prev">
+              <i class="bi bi-arrow-left" aria-hidden="true"></i>
+              <span class="visually-hidden">Notícia anterior</span>
+            </button>
+            <div class="carousel-indicators news-indicators">
+              <button type="button" data-bs-target="#carouselNoticias" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Notícia 1"></button>
+              <button type="button" data-bs-target="#carouselNoticias" data-bs-slide-to="1" aria-label="Notícia 2"></button>
+              <button type="button" data-bs-target="#carouselNoticias" data-bs-slide-to="2" aria-label="Notícia 3"></button>
+              <button type="button" data-bs-target="#carouselNoticias" data-bs-slide-to="3" aria-label="Notícia 4"></button>
+              <button type="button" data-bs-target="#carouselNoticias" data-bs-slide-to="4" aria-label="Notícia 5"></button>
+              <button type="button" data-bs-target="#carouselNoticias" data-bs-slide-to="5" aria-label="Notícia 6"></button>
+            </div>
+            <button class="news-arrow" type="button" data-bs-target="#carouselNoticias" data-bs-slide="next">
+              <i class="bi bi-arrow-right" aria-hidden="true"></i>
+              <span class="visually-hidden">Próxima notícia</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         RF06 – Formulário de contato
+         ================================================================= -->
+    <section class="section section-alt" id="contato">
+      <div class="container">
+        <div class="row gx-4 gx-xl-5 gy-5">
+          <div class="col-lg-5">
+            <span class="eyebrow">Contato</span>
+            <h2 class="section-title">Vamos cozinhar o seu próximo passo?</h2>
+            <hr class="divider">
+            <p class="section-lead mb-4">
+              Tire dúvidas sobre turmas, bolsas e formas de pagamento. Nossa equipe responde em até um dia útil.
+            </p>
+            <ul class="list-unstyled contact-info">
+              <li><i class="bi bi-geo-alt" aria-hidden="true"></i><span>Rua dos Aromas, 250 — Vila Madalena<br>São Paulo/SP — 05435-000</span></li>
+              <li><i class="bi bi-telephone" aria-hidden="true"></i><span>(11) 3456-7890</span></li>
+              <li><i class="bi bi-envelope" aria-hidden="true"></i><span>contato@aromasesaber.edu.br</span></li>
+              <li><i class="bi bi-clock" aria-hidden="true"></i><span>Seg. a sex., 8h às 21h · Sáb., 8h às 14h</span></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-7">
+            <!-- Sem back-end: o envio usa apenas a validação nativa do HTML5 -->
+            <form class="form-card" action="#" method="post">
+              <div class="row g-3">
+                <div class="col-12">
+                  <label for="nome" class="form-label">Nome</label>
+                  <input type="text" class="form-control" id="nome" name="nome" autocomplete="name" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label">E-mail</label>
+                  <input type="email" class="form-control" id="email" name="email" autocomplete="email"
+                         placeholder="voce@exemplo.com" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="telefone" class="form-label">Telefone</label>
+                  <input type="tel" class="form-control" id="telefone" name="telefone" autocomplete="tel"
+                         placeholder="(11) 91234-5678" pattern="[0-9()\s+\-]{8,20}">
+                </div>
+                <div class="col-12">
+                  <label for="curso" class="form-label">Curso de interesse</label>
+                  <select class="form-select" id="curso" name="curso" required>
+                    <option value="" selected disabled>Selecione um curso</option>
+                    <option>Panificação Artesanal e Fermentação Natural</option>
+                    <option>Técnicas Clássicas de Alta Gastronomia</option>
+                    <option>Confeitaria Francesa Contemporânea</option>
+                    <option>Sommelier e Harmonização de Vinhos</option>
+                    <option>Gestão de Custos e Fichas Técnicas para Restaurantes</option>
+                    <option>Cozinha Molecular e Inovação Culinária</option>
+                    <option>Ainda não decidi</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label for="mensagem" class="form-label">Mensagem</label>
+                  <textarea class="form-control" id="mensagem" name="mensagem" rows="5" required></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-vinho btn-lg w-100">
+                    Enviar mensagem <i class="bi bi-send ms-1" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================================================================
+       RF07 – Modais de detalhes dos cursos
+       =================================================================== -->
+
+  <!-- Modal: Panificação -->
+  <div class="modal fade" id="modalPanificacao" tabindex="-1" aria-labelledby="modalPanificacaoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="modalPanificacaoLabel">Panificação Artesanal e Fermentação Natural</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body p-4">
+          <dl class="row modal-facts mx-0 mb-4">
+            <div class="col-sm-4"><dt>Carga horária</dt><dd>60 horas</dd></div>
+            <div class="col-sm-4"><dt>Modalidade</dt><dd>Presencial</dd></div>
+            <div class="col-sm-4"><dt>Investimento</dt><dd>R$ 1.450,00</dd></div>
+          </dl>
+          <h3>Descrição</h3>
+          <p>Curso prático dedicado à panificação de longa fermentação. Os alunos cultivam o próprio fermento natural (levain) e produzem pães rústicos, integrais, focaccias e ciabattas em fornos de lastro.</p>
+          <h3>Objetivos</h3>
+          <ul>
+            <li>Criar e manter um fermento natural estável;</li>
+            <li>Controlar hidratação, temperatura e tempo de fermentação;</li>
+            <li>Dominar técnicas de modelagem, pestana e assamento.</li>
+          </ul>
+          <h3>Público-alvo</h3>
+          <p class="mb-0">Iniciantes apaixonados por pães, padeiros que desejam migrar para o artesanal e empreendedores de micropadarias.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-vinho" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Alta Gastronomia -->
+  <div class="modal fade" id="modalAltaGastronomia" tabindex="-1" aria-labelledby="modalAltaGastronomiaLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="modalAltaGastronomiaLabel">Técnicas Clássicas de Alta Gastronomia</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body p-4">
+          <dl class="row modal-facts mx-0 mb-4">
+            <div class="col-sm-4"><dt>Carga horária</dt><dd>120 horas</dd></div>
+            <div class="col-sm-4"><dt>Modalidade</dt><dd>Semipresencial</dd></div>
+            <div class="col-sm-4"><dt>Investimento</dt><dd>R$ 3.200,00</dd></div>
+          </dl>
+          <h3>Descrição</h3>
+          <p>Formação completa nos fundamentos da cozinha clássica francesa: brigada de cozinha, mise en place, fundos, molhos-mãe, cortes de legumes, cocções e empratamento. A teoria é estudada on-line e a prática acontece em aulas presenciais semanais.</p>
+          <h3>Objetivos</h3>
+          <ul>
+            <li>Executar os cinco molhos-mãe e seus derivados;</li>
+            <li>Aplicar corretamente os métodos de cocção seca, úmida e mista;</li>
+            <li>Planejar e servir um menu degustação de três tempos.</li>
+          </ul>
+          <h3>Público-alvo</h3>
+          <p class="mb-0">Cozinheiros profissionais, estudantes de gastronomia e entusiastas que buscam base técnica sólida.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-vinho" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Confeitaria -->
+  <div class="modal fade" id="modalConfeitaria" tabindex="-1" aria-labelledby="modalConfeitariaLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="modalConfeitariaLabel">Confeitaria Francesa Contemporânea</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body p-4">
+          <dl class="row modal-facts mx-0 mb-4">
+            <div class="col-sm-4"><dt>Carga horária</dt><dd>80 horas</dd></div>
+            <div class="col-sm-4"><dt>Modalidade</dt><dd>Presencial</dd></div>
+            <div class="col-sm-4"><dt>Investimento</dt><dd>R$ 2.100,00</dd></div>
+          </dl>
+          <h3>Descrição</h3>
+          <p>Da massa folhada ao entremet espelhado, o curso percorre os clássicos da pâtisserie francesa com releituras contemporâneas, técnicas de temperagem de chocolate e montagem de sobremesas empratadas.</p>
+          <h3>Objetivos</h3>
+          <ul>
+            <li>Produzir massas base: folhada, choux, sablée e génoise;</li>
+            <li>Preparar cremes, mousses, glaçagens e macarons;</li>
+            <li>Montar entremets com acabamento profissional.</li>
+          </ul>
+          <h3>Público-alvo</h3>
+          <p class="mb-0">Confeiteiros iniciantes e intermediários, profissionais de cafeterias e quem deseja empreender com doces finos.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-vinho" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Sommelier -->
+  <div class="modal fade" id="modalSommelier" tabindex="-1" aria-labelledby="modalSommelierLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="modalSommelierLabel">Sommelier e Harmonização de Vinhos</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body p-4">
+          <dl class="row modal-facts mx-0 mb-4">
+            <div class="col-sm-4"><dt>Carga horária</dt><dd>45 horas</dd></div>
+            <div class="col-sm-4"><dt>Modalidade</dt><dd>Híbrido</dd></div>
+            <div class="col-sm-4"><dt>Investimento</dt><dd>R$ 1.800,00</dd></div>
+          </dl>
+          <h3>Descrição</h3>
+          <p>Introdução ao universo do vinho: viticultura, vinificação, principais castas e regiões do Velho e do Novo Mundo. Degustações presenciais guiadas complementam as aulas on-line ao vivo.</p>
+          <h3>Objetivos</h3>
+          <ul>
+            <li>Conduzir uma análise sensorial visual, olfativa e gustativa;</li>
+            <li>Reconhecer estilos e castas das principais regiões;</li>
+            <li>Propor harmonizações entre vinhos e pratos.</li>
+          </ul>
+          <h3>Público-alvo</h3>
+          <p class="mb-0">Profissionais de salão, garçons, donos de restaurantes e apreciadores que querem aprofundar o conhecimento.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-vinho" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Gestão -->
+  <div class="modal fade" id="modalGestao" tabindex="-1" aria-labelledby="modalGestaoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="modalGestaoLabel">Gestão de Custos e Fichas Técnicas para Restaurantes</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body p-4">
+          <dl class="row modal-facts mx-0 mb-4">
+            <div class="col-sm-4"><dt>Carga horária</dt><dd>30 horas</dd></div>
+            <div class="col-sm-4"><dt>Modalidade</dt><dd>EAD</dd></div>
+            <div class="col-sm-4"><dt>Investimento</dt><dd>R$ 890,00</dd></div>
+          </dl>
+          <h3>Descrição</h3>
+          <p>Curso 100% on-line focado na saúde financeira de negócios de alimentação. Aborda formação de preço, custo de mercadoria vendida (CMV), controle de desperdício e elaboração de fichas técnicas padronizadas.</p>
+          <h3>Objetivos</h3>
+          <ul>
+            <li>Elaborar fichas técnicas com rendimento e fator de correção;</li>
+            <li>Calcular CMV e definir preço de venda com margem adequada;</li>
+            <li>Implantar rotinas de compras e controle de estoque.</li>
+          </ul>
+          <h3>Público-alvo</h3>
+          <p class="mb-0">Proprietários, gerentes e chefs responsáveis por restaurantes, bares, food trucks e deliveries.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-vinho" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Molecular -->
+  <div class="modal fade" id="modalMolecular" tabindex="-1" aria-labelledby="modalMolecularLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="modalMolecularLabel">Cozinha Molecular e Inovação Culinária</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body p-4">
+          <dl class="row modal-facts mx-0 mb-4">
+            <div class="col-sm-4"><dt>Carga horária</dt><dd>50 horas</dd></div>
+            <div class="col-sm-4"><dt>Modalidade</dt><dd>Presencial</dd></div>
+            <div class="col-sm-4"><dt>Investimento</dt><dd>R$ 2.600,00</dd></div>
+          </dl>
+          <h3>Descrição</h3>
+          <p>Laboratório de criatividade que une química e gastronomia. Os alunos exploram hidrocoloides, emulsões, cocção sous vide e nitrogênio líquido para desenvolver pratos autorais.</p>
+          <h3>Objetivos</h3>
+          <ul>
+            <li>Aplicar técnicas de esferificação, gelificação e espumas;</li>
+            <li>Compreender reações químicas envolvidas nos preparos;</li>
+            <li>Criar e apresentar um prato autoral inovador.</li>
+          </ul>
+          <h3>Público-alvo</h3>
+          <p class="mb-0">Chefs e cozinheiros com experiência prévia que desejam inovar em cardápios e menus degustação.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-vinho" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       RF08 – Rodapé institucional
+       =================================================================== -->
+  <footer class="footer-as">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <p class="footer-brand mb-2">Aromas <span class="amp">&amp;</span> Saber</p>
+          <p class="mb-0">Academia de Gastronomia &amp; Alta Confeitaria. Formando profissionais que transformam ingredientes em experiências.</p>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+          <h2>Endereço</h2>
+          <address class="mb-0">
+            <i class="bi bi-geo-alt" aria-hidden="true"></i>Rua dos Aromas, 250<br>
+            Vila Madalena — São Paulo/SP<br>
+            CEP 05435-000
+          </address>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+          <h2>Contato</h2>
+          <ul class="list-unstyled footer-contact mb-0">
+            <li class="mb-2"><i class="bi bi-telephone" aria-hidden="true"></i><a href="tel:+551134567890">(11) 3456-7890</a></li>
+            <li><i class="bi bi-envelope" aria-hidden="true"></i><a href="mailto:contato@aromasesaber.edu.br">contato@aromasesaber.edu.br</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2">
+          <h2>Redes sociais</h2>
+          <div class="d-flex gap-2">
+            <a class="social-link" href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a class="social-link" href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a class="social-link" href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between gap-2">
+        <p class="mb-0">&copy; 2026 Instituto Aromas &amp; Saber. Todos os direitos reservados.</p>
+        <p class="mb-0">CNPJ 00.000.000/0001-00 · Projeto acadêmico</p>
+        <p class="mb-0">Desenvolvido por <span class="dev-credit">ycborg</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (necessário para navbar colapsável, dropdown e modais) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

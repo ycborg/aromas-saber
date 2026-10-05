@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Instituto Aromas &amp; Saber">
+  <!-- Monograma: anel dourado com ramo de trigo estilizado -->
+  <circle cx="32" cy="32" r="30" fill="#6b1e2e" stroke="#b8975a" stroke-width="2"/>
+  <circle cx="32" cy="32" r="25" fill="none" stroke="#d9c29a" stroke-width="0.8" stroke-dasharray="2 3"/>
+  <g fill="none" stroke="#d9c29a" stroke-width="2" stroke-linecap="round">
+    <path d="M32 48 V18"/>
+    <path d="M32 24 q-7 -2 -8 -8 q7 1 8 8"/>
+    <path d="M32 24 q7 -2 8 -8 q-7 1 -8 8"/>
+    <path d="M32 32 q-7 -2 -8 -8 q7 1 8 8"/>
+    <path d="M32 32 q7 -2 8 -8 q-7 1 -8 8"/>
+    <path d="M32 40 q-7 -2 -8 -8 q7 1 8 8"/>
+    <path d="M32 40 q7 -2 8 -8 q-7 1 -8 8"/>
+  </g>
+</svg>
