@@ -749,6 +749,10 @@ html {
   margin-bottom: 1rem;
 }
 
+/* Ponto focal das fotos cuja parte principal não fica no centro */
+.news-img.focus-bolo { object-position: 50% 42%; }
+.news-img.focus-croissant { object-position: 50% 80%; }
+
 /* Barra com setas e indicadores logo abaixo do slide */
 .news-controls {
   display: flex;
@@ -804,12 +808,13 @@ html {
 @media (min-width: 992px) {
   .news-media {
     position: relative;
-    min-height: 26rem;
+    aspect-ratio: 4 / 3; /* em telas largas o quadro cresce em altura e não "achata" a foto */
   }
 
   .news-img {
     position: absolute;
     inset: 0;
+    height: 100%;
     aspect-ratio: auto;
   }
 }
