@@ -1,11 +1,13 @@
 # Instituto Aromas & Saber — Portal Institucional
 
+**Site no ar:** https://ycborg.github.io/aromas-saber/
+
 Portal responsivo de uma academia de gastronomia, feito com **HTML5, CSS3 e Bootstrap 5** (sem frameworks JavaScript nem back-end; o único JS é o bundle oficial do Bootstrap, usado pela navbar, dropdown e modais).
 
 ## Estrutura
 
 ```
-portal-aromas-saber/
+aromas-saber/
 ├── index.html      Página inicial (navbar, hero, cursos, indicadores, tabela, carrossel de notícias, contato, modais, rodapé)
 ├── areas.html      Página "Áreas de Ensino" (destino do menu suspenso)
 ├── css/style.css   Estilos personalizados (paleta, tipografia e ajustes responsivos)
@@ -29,4 +31,4 @@ portal-aromas-saber/
 
 ## Como abrir
 
-Abra `index.html` no navegador (é necessária conexão com a internet para carregar Bootstrap, fontes e imagens via CDN).
+Acesse o link acima ou abra `index.html` no navegador (é necessária conexão com a internet para carregar Bootstrap, fontes e imagens via CDN).
